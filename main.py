@@ -1,7 +1,10 @@
 import platform
 import os
-#to clear screen
+from Dealing import Player
+from art import logo
+
 def clr_scr():
+    # To clear screen
     # Check if the platform is Windows or linux
     # If Platform is Windows then run command os.system(‘cls’) else os.system(‘clear’)
     if (platform.system().lower() == "windows"):
@@ -9,12 +12,7 @@ def clr_scr():
     else:
         cmdtorun = 'clear'
 
-    os.system(cmdtorun)
-
-
-from Dealing import Player
-from art import logo
-
+    os.system(cmdtorun) #to clear screen
 user = Player()
 dealer = Player()
 
@@ -42,10 +40,8 @@ def user_chooses_whether_to_hit():
             hitting_cards()
     if more_cards == "n":
         pass
-
-def computer_auto_hit_sequence():
+def computer_auto_hit_sequence(): #computer auto-hits if below 17
     pass#fill in
-
 def reset():
     user.reset()
     dealer.reset()

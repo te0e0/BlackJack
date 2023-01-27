@@ -57,7 +57,7 @@ def game(): #putting the entire game into a function to allow for recursion
 
     if dealer.score == 21:
         Play_again = input(f"Your cards are {user.display_cards(2)}. The dealer is showing the following cards: "
-                           f"[{dealer.display_cards(2)}. Sorry,the dealer got BlackJack! Press Enter to play again")
+                           f"{dealer.display_cards(2)}. Sorry,the dealer got BlackJack! Press Enter to play again")
         user.reset()
         game()
 

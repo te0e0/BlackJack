@@ -37,7 +37,7 @@ def user_chooses_whether_to_hit():
             game()
         else:
             print(f"Your cards are {user.display_cards(2)}")
-            hitting_cards()
+            user_chooses_whether_to_hit()
     if more_cards == "n":
         pass
 def computer_auto_hit_sequence(): #computer auto-hits if below 17

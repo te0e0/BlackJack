@@ -27,7 +27,7 @@ def deal_and_score(player):
     user.score_hand()
     dealer.score_hand()
 def user_chooses_whether_to_hit():
-    more_cards = input("Do you wish to hit? (y / n)\n").lower()
+    more_cards = input("Do you wish to hit? (y / n).\n").lower()
     if more_cards == "y":
         deal_and_score(user)
         if user.score > 21:

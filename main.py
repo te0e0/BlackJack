@@ -28,7 +28,7 @@ def deal_and_score(player):
     player.deal_cards(1)
     user.score_hand()
     dealer.score_hand()
-def hitting_cards():
+def user_chooses_whether_to_hit():
     more_cards = input("Do you wish to hit? (y / n)").lower()
     if more_cards == "y":
         deal_and_score(user)
@@ -40,13 +40,19 @@ def hitting_cards():
         else:
             print(f"Your cards are {user.display_cards(2)}")
             hitting_cards()
+    if more_cards == "n":
+        pass
+
+def computer_auto_hit_sequence:
+    #fill in
+
 def reset():
     user.reset()
     dealer.reset()
 
 
-#putting the entire game into a function to allow for recursion
-def game():
+
+def game(): #putting the entire game into a function to allow for recursion
     reset()
     print(logo)
     ##leaving room for betting procedure
@@ -68,11 +74,8 @@ def game():
     print(f"Your cards are {user.display_cards(2)}. The dealer is showing the following cards: "
           f"{dealer.display_cards(1)}")
 
+    user_chooses_whether_to_hit()
 
-
-
-
-    hitting_cards()
 game()
 
 

@@ -43,8 +43,8 @@ def user_chooses_whether_to_hit():
     if more_cards == "n":
         pass
 
-def computer_auto_hit_sequence:
-    #fill in
+def computer_auto_hit_sequence():
+    pass#fill in
 
 def reset():
     user.reset()
